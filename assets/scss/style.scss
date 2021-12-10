@@ -1,0 +1,32 @@
+
+ 
+// variable
+@import "variable/_variable.scss";
+
+// mixin
+@import "mixin/_mixin.scss";
+
+// body reset content
+@import "reset/_predefine.scss";
+
+// component content
+@import "section/header/header";
+@import "section/footer/footer";
+@import "section/banner/banner";
+@import "section/counter/counter";
+@import "section/pros/pros";
+@import "section/steps/steps";
+@import "section/testimonial/testimonial";
+@import "section/brand/brand";
+@import "section/gallery/gallery";
+@import "section/pageBanner/pageBanner";
+@import "section/video/video";
+@import "section/bread/bread";
+
+// Pages;
+@import "pages/index/index";
+@import "pages/aligners/aligners";
+@import "pages/price/price";
+@import "pages/assesment/assesment";
+@import "pages/faq/faq";
+@import "pages/contact/contact";

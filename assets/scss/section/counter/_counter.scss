@@ -1,0 +1,41 @@
+.counter {
+
+    margin-top: -145px;
+
+    &-content {
+        background-color: $white;
+        box-shadow: 0px 15px 65px 0px rgba(1, 121, 177, .14);
+        padding: 085px 0px 065px 0px;
+        border-radius: 20px;
+        border-bottom: 10px solid #023569;
+
+        .counter-item {
+            text-align: center;
+            padding: 0 15px;
+
+            @media (max-width: 991.98px) {
+                margin-bottom: 30px;
+            }
+
+            h4 {
+                display: flex;
+                justify-content: center;
+                font-size: 78px;
+                color: $titleColor;
+                font-family: $titleFont;
+                margin-bottom: 0;
+
+                @media (max-width: 991.98px) {
+                    font-size: 48px;
+                }
+            }
+
+            p {
+                font-size: 26px;
+                line-height: 36px;
+                color: #54595f;
+                margin-bottom: 0;
+            }
+        }
+    }
+}

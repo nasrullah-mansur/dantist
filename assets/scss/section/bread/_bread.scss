@@ -1,0 +1,29 @@
+.bread {
+    background-color: #eee;
+    padding: 8px 0;
+
+    ul {
+        display: flex;
+        align-items: center;
+
+        li {
+            &::after {
+                content: '>';
+            }
+
+            &:last-child {
+                &::after {
+                    display: none;
+                }
+            }
+            
+            a {
+                display: inline-block;
+                padding: 5px 15px;
+                color: #2ab0ed;
+                font-weight: 600;
+            }
+
+        }
+    }
+}

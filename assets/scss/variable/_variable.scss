@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'Proxima-Nova-reg';
+    src: url(../webfonts/proxima-nova/ProximaNova-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: 'Proxima-Nova-bold';
+    src: url(../webfonts/proxima-nova/Proxima-Nova-Bold.ttf);
+  }
+
+
+// Color;
+$primary-color: #245BCD;
+$hover-color : #188fff;
+$bColor: #333333;
+$white : #ffffff;
+$black : #000000;
+$bgOne: #FAFAFA;
+$bgTwo: #F7F7F7;
+$border-color: #DADADA;
+$titleColor: #023569;
+
+
+// Body;
+$bodyFont: 'Proxima-Nova-reg', sans-serif;
+$titleFont: 'Proxima-Nova-bold', sans-serif;
+$bfSize: 16px;
+$bLineHeight: 26px;
+$fontWeight: 400;
+$transition: all .4s linear;
