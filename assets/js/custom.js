@@ -102,8 +102,27 @@ $(document).ready(function() {
         ]
     });
 
+    $('.reviews .reviews-slide').slick({
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      dots: false,
+      prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
+      nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>',
+      fade: true,
+  });
+
     $('.faq-page .tab-content .faq-item a').on('click', function() {
       $(this).toggleClass('active');
     })
+
+    if($('#playVideo').length > 0) {
+      let button = document.getElementById('playVideo');
+      button.addEventListener('click', () => {
+        let video = button.parentElement.querySelector('video');
+        video.play();
+      })
+
+    }
 
 });

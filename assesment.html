@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/all.min.css">
     <link rel="stylesheet" href="assets/css/slick.css">
-    <link rel="stylesheet" href="assets/css/venobox.min.css">
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -60,7 +59,6 @@
     <section class="banner page-banner pb-0">
         <div class="container" style="max-width: 100%; padding: 0;">
             <img src="assets/images/assesment.jpg" class="w-100 img-fluid" alt="img">
-
         </div>
     </section>
     <!-- Page banner end -->
@@ -76,106 +74,120 @@
     </nav>
     <!-- Breadcrumb end -->
 
-    <!-- Assesment content start -->
-    <section class="assesment">
-        <div class="container">
-            <div class="section-title">
-                <h2>YOUR 30s SMILE ASSESSMENT</h2>
-                <p>Our Clear Aligners are designed for minor to moderate teeth correction. <br>
-                    Answer these questions to find out if you are a candidate!</p>
-            </div>
+    <form>
+        <!-- Assesment content start -->
+        <section class="assesment">
+            <div class="container">
+                <div class="section-title">
+                    <h2>YOUR 30s SMILE ASSESSMENT</h2>
+                    <p>Our Clear Aligners are designed for minor to moderate teeth correction. <br>
+                        Answer these questions to find out if you are a candidate!</p>
+                </div>
 
-            <div class="selections">
-                <h4>Why do you want to straighten your teeth?</h4>
+                <div class="selections">
+                    <h4>Why do you want to straighten your teeth?</h4>
 
-                <div class="inputs">
-                    <div class="select-item">
-                        <input type="radio" id="one" name="select">
-                        <label for="one">Better smile</label>
+                    <div class="inputs">
+                        <div class="select-item">
+                            <input type="checkbox" id="one" name="select">
+                            <label for="one">Better smile</label>
+                        </div>
+                        <div class="select-item">
+                            <input type="checkbox" id="two" name="select">
+                            <label for="two">For an upcoming event</label>
+                        </div>
+                        <div class="select-item">
+                            <input type="checkbox" id="three" name="select">
+                            <label for="three">To increase your confidence level</label>
+                        </div>
+                        <div class="select-item">
+                            <input type="checkbox" id="four" name="select">
+                            <label for="four">Healthier teeth/Better oral hygiene</label>
+                        </div>
+                        <div class="select-item">
+                            <input type="checkbox" id="five" name="select">
+                            <label for="five">I have not been wearing my retainers and my teeth have shifted</label>
+                        </div>
                     </div>
-                    <div class="select-item">
-                        <input type="radio" id="two" name="select">
-                        <label for="two">For an upcoming event</label>
-                    </div>
-                    <div class="select-item">
-                        <input type="radio" id="three" name="select">
-                        <label for="three">To increase your confidence level</label>
-                    </div>
-                    <div class="select-item">
-                        <input type="radio" id="four" name="select">
-                        <label for="four">Healthier teeth/Better oral hygiene</label>
-                    </div>
-                    <div class="select-item">
-                        <input type="radio" id="five" name="select">
-                        <label for="five">I have not been wearing my retainers and my teeth have shifted</label>
+                </div>
+
+                <div class="images">
+                    <h4>Which best describes your smile?</h4>
+
+                    <div class="items">
+                        <div class="item">
+                            <input type="radio" name="img-select" id="item-1">
+                            <label for="item-1">
+                                <img src="assets/images/i-1.jpg" class="w-100 img-fluid" alt="img">
+                                <i class="fas fa-check-circle"></i>
+                            </label>
+                        </div>
+                        <div class="item">
+                            <input type="radio" name="img-select" id="item-2">
+                            <label for="item-2">
+                                <img src="assets/images/i-2.jpg" class="w-100 img-fluid" alt="img">
+                                <i class="fas fa-check-circle"></i>
+                            </label>
+                        </div>
+                        <div class="item">
+                            <input type="radio" name="img-select" id="item-3">
+                            <label for="item-3">
+                                <img src="assets/images/i-3.jpg" class="w-100 img-fluid" alt="img">
+                                <i class="fas fa-check-circle"></i>
+                            </label>
+                        </div>
+                        <div class="item">
+                            <input type="radio" name="img-select" id="item-4">
+                            <label for="item-4">
+                                <img src="assets/images/i-4.jpg" class="w-100 img-fluid" alt="img">
+                                <i class="fas fa-check-circle"></i>
+                            </label>
+                        </div>
+                        <div class="item">
+                            <input type="radio" name="img-select" id="item-5">
+                            <label for="item-5">
+                                <img src="assets/images/i-5.jpg" class="w-100 img-fluid" alt="img">
+                                <i class="fas fa-check-circle"></i>
+                            </label>
+                        </div>
+                        <div class="item">
+                            <input type="radio" name="img-select" id="item-6">
+                            <label for="item-6">
+                                <img src="assets/images/i-6.jpg" class="w-100 img-fluid" alt="img">
+                                <i class="fas fa-check-circle"></i>
+                            </label>
+                        </div>
                     </div>
                 </div>
             </div>
+        </section>
+        <!-- Assesment content end -->
 
-            <div class="images">
-                <h4>Which best describes your smile?</h4>
+        <!-- Form start -->
+        <section class="asses-form pt-0">
+            <div class="container">
+                <div class="col-12 col-lg-8 m-auto">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Contact No</label>
+                        <input type="text" class="form-control" id="phone">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
 
-                <div class="items">
-                    <div class="item">
-                        <a href="#">
-                            <img src="assets/images/i-1.jpg" class="w-100 img-fluid" alt="img">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="#">
-                            <img src="assets/images/i-2.jpg" class="w-100 img-fluid" alt="img">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="#">
-                            <img src="assets/images/i-3.jpg" class="w-100 img-fluid" alt="img">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="#">
-                            <img src="assets/images/i-4.jpg" class="w-100 img-fluid" alt="img">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="#">
-                            <img src="assets/images/i-5.jpg" class="w-100 img-fluid" alt="img">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="#">
-                            <img src="assets/images/i-6.jpg" class="w-100 img-fluid" alt="img">
-                        </a>
+                    <div class="btn-area">
+                        <button>Get Result</button>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- Assesment content end -->
-
-    <!-- Form start -->
-    <section class="asses-form">
-        <div class="container">
-            <form class="col-12 col-lg-8 m-auto">
-                <div class="mb-3">
-                    <label for="name" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="name">
-                </div>
-                <div class="mb-3">
-                    <label for="phone" class="form-label">Contact No</label>
-                    <input type="text" class="form-control" id="phone">
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="email">
-                </div>
-
-                <div class="btn-area">
-                    <button>Get Result</button>
-                </div>
-            </form>
-        </div>
-    </section>
-    <!-- Form end -->
+        </section>
+        <!-- Form end -->
+    </form>
 
     <!-- Footer start -->
     <footer class="footer">
@@ -246,9 +258,7 @@
     <!-- Scripts -->
     <script src="assets/js/jquery.2.2.4.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/mixitup.min.js"></script>
     <script src="assets/js/slick.min.js"></script>
-    <script src="assets/js/venobox.min.js"></script>
     <script src="assets/js/custom.js"></script>
 </body>
 </html>

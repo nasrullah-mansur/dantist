@@ -99,6 +99,20 @@
             top: 0;
             left: 50%;
             transform: translateX(-50%);
+
+            &:last-child {
+                display: none;
+            }
+
+            @media (max-width: 767.98px) {
+                &:last-child {
+                    display: block;
+                }
+
+                &:first-child {
+                    display: none;
+                }
+            }
         }
     }
 
