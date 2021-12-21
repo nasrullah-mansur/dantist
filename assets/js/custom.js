@@ -119,10 +119,31 @@ $(document).ready(function() {
     if($('#playVideo').length > 0) {
       let button = document.getElementById('playVideo');
       button.addEventListener('click', () => {
-        let video = button.parentElement.querySelector('video');
-        video.play();
+        let videoPlayer = document.getElementById('video');
+        videoPlayer.play();
       })
 
     }
+
+
+    $(window).on('scroll', function() {
+      let scrollTop = $(this).scrollTop();
+
+      if(scrollTop > 150) {
+        $('.header').addClass('active');
+        $('.back-to-top').addClass('active')
+      } else {
+        $('.header').removeClass('active');
+        $('.back-to-top').removeClass('active');
+      }
+    })
+
+    $('.back-to-top').on('click', function() {
+      $('html, body').animate({
+        scrollTop: 0
+      });
+    })
+
+
 
 });

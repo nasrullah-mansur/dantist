@@ -14,45 +14,87 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+
+    <!-- Back to top start -->
+    <div class="back-to-top">
+        <i class="fas fa-level-up-alt"></i>
+    </div>
+    <!-- Back to top end -->
     
     <!-- Header start -->
-    <header class="header">
-        <div class="container-fluid">
-            <div class="header-content">
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="assets/images/logo.png" alt="logo">
-                    </a>
-                </div>
-                <div class="mobile-btn">
+    <div class="header">
+        <nav class="navbar navbar-expand-xl">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">
+                  <img src="assets/images/logo.png" alt="logo">
+                </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
                     <i class="fas fa-bars"></i>
-                </div>
-                <nav class="list">
-                    <ul>
-                        <li class="active"><a href="index.html">Home</a></li>
-                        <li><a href="aligners.html">Clear Aligners</a></li>
-                        <li><a href="assesment.html">Smile Assessment</a></li>
-                        <li><a href="#">Shop</a></li>
-                        <li><a href="faq.html">FAQ</a></li>
-                        <li><a href="price.html">Pricing</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                    </ul>
-                </nav>
-                <div class="cart">
-                    <a href="javascript:void(0)">
-                        <i class="fas fa-shopping-cart"></i>
-                    </a>
-                </div>
-                <div class="social">
-                    <ul>
-                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
-                    </ul>
-                </div>
+                </span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="aligners.html">Clear Aligners</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="assesment.html">Smile Assessment</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Shop</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="faq.html">FAQ</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="price.html">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="reviews.html">Reviews</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                  </li>                  
+                </ul>
+                <ul class="ms-auto d-flex navbar-nav dropdown-list" >
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <img src="assets/images/united-states.png" alt="img">
+                          <span>EN-US</span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="assets/images/united-states.png" alt="img">
+                                    <span>EN-US</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="assets/images/united-kingdom.png" alt="img">
+                                    <span>EN-UK</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="social">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                    <li><a href="javascript:void(0)"><i class="fas fa-shopping-cart"></i></a></li>
+                </ul>
+              </div>
             </div>
-        </div>
-    </header>
+          </nav>
+    </div>
     <!-- Header end -->
 
     <!-- Banner start -->
@@ -64,10 +106,12 @@
                     and a less painful way to straighten their teeth.
                 </p>
                 <a href="#" class="sign-up">Get A New Smile</a>
+                <br>
+                <br>
+                <button class="play-video-btn" id="playVideo"><i class="far fa-play-circle"></i> align now</button>
             </div>
             <div class="video">
-                <button class="play-video-btn" id="playVideo"><i class="far fa-play-circle"></i> Fix Me</button>
-                <video class="w-100">
+                <video class="w-100" id="video" >
                     <source src="assets/videos/teetch.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                   </video>
@@ -93,8 +137,8 @@
                     <div class="col-lg-4 col-md-12">
                         <div class="counter-item">
                             <h4>
-                                <span>3</span>
-                                Mo+
+                                <span>165</span>
+                                K
                             </h4>
                             <p>Shortest Aligners Journey </p>
                         </div>
@@ -179,6 +223,38 @@
         </div>
     </section>
     <!-- Pros end -->
+
+     <!-- about start -->
+     <section class="about">
+        <div class="container">
+            <h2>What's in the box?</h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="text">
+                        <h4>Sets of Clear Aligners</h4>
+                        <p>You will receive the aligners you need for the duration of your treatment that has been individually packaged with labels on them so that you know when to wear which. There will be your personalized name on each aligner set
+                        </p>
+                        <h4>Aligners Case</h4>
+                        <p>We provide a case for you to store your aligners safely.</p>
+                        <h4>Chewies</h4>
+                        <p>Chewies helps to seat your aligners into position.</p>
+                        <h4>Aligners hook</h4>
+                        <p>To take off your aligners.</p>
+                        <h4>Mould</h4>
+                        <p>Your teeth mould.</p>
+                        <h4>Cheek Retractor</h4>
+                        <p>For you to take pictures of your teeth.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="img">
+                        <img src="assets/images/about.jpg" alt="about">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about end -->
 
     <!-- Video start -->
     <div class="video">
@@ -326,14 +402,12 @@
         <div class="container">
             <h2>Smile Wall</h2>
             <div class="gallery-images">
-
                 <div class="item">
                   <a href="https://www.instagram.com/thechelseytan/" target="_blank">
                       <img src="assets/images/gall-6.jpeg" alt="gallery">
                       <div class="overlay"></div>
                   </a>
                 </div>
-
                 <div class="item">
                     <a href="https://www.instagram.com/miss_any/" target="_blank">
                         <img src="assets/images/gall-8.jpeg" alt="gallery">
@@ -363,30 +437,11 @@
                         <img src="assets/images/gall-2.jpg" alt="gallery">
                         <div class="overlay"></div>
                     </a>
-                </div>
-                <div class="item">
-                    <a href="https://www.instagram.com/ciaowen02/" target="_blank">
-                        <img src="assets/images/gall-9.jpeg" alt="gallery">
-                        <div class="overlay"></div>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="https://www.instagram.com/joashfit/" target="_blank">
-                        <img src="assets/images/gall-3.jpg" alt="gallery">
-                        <div class="overlay"></div>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="https://www.instagram.com/tien_51e/" target="_blank">
-                        <img src="assets/images/gall-7.jpeg" alt="gallery">
-                        <div class="overlay"></div>
-                    </a>
-                </div>
-                
+                </div>                
             </div>
 
             <div class="btn-area text-center">
-                <a href="#" class="see-more">Get A New Smile </a>
+                <a href="gallery.html" class="see-more">Show More </a>
             </div>
         </div>
     </section>

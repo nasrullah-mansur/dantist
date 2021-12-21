@@ -14,45 +14,87 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+
+    <!-- Back to top start -->
+    <div class="back-to-top">
+        <i class="fas fa-level-up-alt"></i>
+    </div>
+    <!-- Back to top end -->
     
     <!-- Header start -->
-    <header class="header">
-        <div class="container-fluid">
-            <div class="header-content">
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="assets/images/logo.png" alt="logo">
-                    </a>
-                </div>
-                <div class="mobile-btn">
+    <div class="header">
+        <nav class="navbar navbar-expand-xl">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">
+                  <img src="assets/images/logo.png" alt="logo">
+                </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
                     <i class="fas fa-bars"></i>
-                </div>
-                <nav class="list">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li class="active"><a href="aligners.html">Clear Aligners</a></li>
-                        <li><a href="assesment.html">Smile Assessment</a></li>
-                        <li><a href="#">Shop</a></li>
-                        <li><a href="faq.html">FAQ</a></li>
-                        <li><a href="price.html">Pricing</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                    </ul>
-                </nav>
-                <div class="cart">
-                    <a href="javascript:void(0)">
-                        <i class="fas fa-shopping-cart"></i>
-                    </a>
-                </div>
-                <div class="social">
-                    <ul>
-                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
-                    </ul>
-                </div>
+                </span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link " href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="aligners.html">Clear Aligners</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="assesment.html">Smile Assessment</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Shop</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="faq.html">FAQ</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="price.html">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="reviews.html">Reviews</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                  </li>                  
+                </ul>
+                <ul class="ms-auto d-flex navbar-nav dropdown-list" >
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <img src="assets/images/united-states.png" alt="img">
+                          <span>EN-US</span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="assets/images/united-states.png" alt="img">
+                                    <span>EN-US</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="assets/images/united-kingdom.png" alt="img">
+                                    <span>EN-UK</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="social">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                    <li><a href="javascript:void(0)"><i class="fas fa-shopping-cart"></i></a></li>
+                </ul>
+              </div>
             </div>
-        </div>
-    </header>
+          </nav>
+    </div>
     <!-- Header end -->
 
     <!-- Page banner start -->
@@ -67,6 +109,17 @@
         </div>
     </section>
     <!-- Page banner end -->
+
+    <!-- Breadcrumb start -->
+    <nav class="bread">
+        <div class="container">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#" class="active">Clear Aligners</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Breadcrumb end -->
 
     <!-- Main future start -->
     <section class="main-future">
@@ -108,37 +161,7 @@
 
 
 
-    <!-- about start -->
-    <section class="about">
-        <div class="container">
-            <h2>What's in the box(gif)?</h2>
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="text">
-                        <h4>Sets of Clear Aligners</h4>
-                        <p>You will receive the aligners you need for the duration of your treatment that has been individually packaged with labels on them so that you know when to wear which. There will be your personalized name on each aligner set
-                        </p>
-                        <h4>Aligners Case</h4>
-                        <p>We provide a case for you to store your aligners safely.</p>
-                        <h4>Chewies</h4>
-                        <p>Chewies helps to seat your aligners into position.</p>
-                        <h4>Aligners hook</h4>
-                        <p>To take off your aligners.</p>
-                        <h4>Mould</h4>
-                        <p>Your teeth mould.</p>
-                        <h4>Cheek Retractor</h4>
-                        <p>For you to take pictures of your teeth.</p>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="img">
-                        <img src="assets/images/about.jpg" alt="about">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- about end -->
+   
 
      <!-- Video start -->
      <div class="video">
@@ -156,7 +179,7 @@
     <!-- treatment start -->
     <section class="treatment">
         <div class="container">
-            <h2>Possible treatment needed</h2>
+            <h2 class="text-decoration-underline">Possible treatment needed</h2>
             <h3>IPR</h3>
             <p>Stands for Interproximal Reduction also known as "enamel reduction". IPR is commonly used to repair crowded teeth for braces or aligners treatment. It's required to remove little portions of the outermost enamel from multiple teeth in spots that were crowded or surround crowded teeth.
             </p>

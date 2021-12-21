@@ -14,45 +14,87 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+
+    <!-- Back to top start -->
+    <div class="back-to-top">
+        <i class="fas fa-level-up-alt"></i>
+    </div>
+    <!-- Back to top end -->
     
     <!-- Header start -->
-    <header class="header">
-        <div class="container-fluid">
-            <div class="header-content">
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="assets/images/logo.png" alt="logo">
-                    </a>
-                </div>
-                <div class="mobile-btn">
+    <div class="header">
+        <nav class="navbar navbar-expand-xl">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">
+                  <img src="assets/images/logo.png" alt="logo">
+                </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
                     <i class="fas fa-bars"></i>
-                </div>
-                <nav class="list">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="aligners.html">Clear Aligners</a></li>
-                        <li><a href="assesment.html">Smile Assessment</a></li>
-                        <li><a href="#">Shop</a></li>
-                        <li><a href="faq.html">FAQ</a></li>
-                        <li class="active"><a href="price.html">Pricing</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                    </ul>
-                </nav>
-                <div class="cart">
-                    <a href="javascript:void(0)">
-                        <i class="fas fa-shopping-cart"></i>
-                    </a>
-                </div>
-                <div class="social">
-                    <ul>
-                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
-                    </ul>
-                </div>
+                </span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="aligners.html">Clear Aligners</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="assesment.html">Smile Assessment</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Shop</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="faq.html">FAQ</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="price.html">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="reviews.html">Reviews</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                  </li>                  
+                </ul>
+                <ul class="ms-auto d-flex navbar-nav dropdown-list" >
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <img src="assets/images/united-states.png" alt="img">
+                          <span>EN-US</span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="assets/images/united-states.png" alt="img">
+                                    <span>EN-US</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="assets/images/united-kingdom.png" alt="img">
+                                    <span>EN-UK</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="social">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                    <li><a href="javascript:void(0)"><i class="fas fa-shopping-cart"></i></a></li>
+                </ul>
+              </div>
             </div>
-        </div>
-    </header>
+          </nav>
+    </div>
     <!-- Header end -->
 
     <!-- Page banner start -->
@@ -100,7 +142,7 @@
                 </div>
                 <div class="item">
                     <div class="title">
-                        <h4>3/6 Months installment payment</h4>
+                        <h4>3 Months installment payment</h4>
                     </div>
                     <div class="content">
                         <h6>Stating From</h6>
@@ -111,19 +153,7 @@
                         <a href="#" data-bs-toggle="modal" data-bs-target="#price">Align Now</a>
                     </div>
                 </div>
-                <div class="item">
-                    <div class="title">
-                        <h4>3/6 Months installment payment</h4>
-                    </div>
-                    <div class="content">
-                        <h6>Stating From</h6>
-                        <p class="amount">MYR 1,900 <span>/ month</span></p>
-                        <span>Interest free payment <br> MYR 1,900 per month for 3 months</span>
-                    </div>
-                    <div class="btn-area">
-                        <a href="#">Align Now</a>
-                    </div>
-                </div>
+                
                 <div class="item">
                     <div class="title">
                         <h4>6 Months installment payment</h4>
@@ -153,21 +183,8 @@
     </section>
     <!-- Price table end -->
 
-    <!-- Add start -->
-    <div class="w-100 add-promotion">
-        <div class="container">
-            <div class="img">
-                <a href="#">
-                    <img src="assets/images/merdeka promo_pc.jpg" class="img-fluid" alt="add">
-                    <img src="assets/images/merdeka_mobile.jpg" class="img-fluid" alt="add">
-                </a>
-            </div>
-        </div>
-    </div>
-    <!-- Add end -->
-
     <!-- Free assisment start -->
-    <div class="free-assisment">
+    <!-- <div class="free-assisment">
         <div class="content">
             <div class="container">
                 <div class="row align-items-center">
@@ -186,8 +203,62 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Free assisment end -->
+
+    <!-- Add start -->
+    <div class="w-100 add-promotion">
+        <div class="">
+            <div class="img">
+                <a href="#">
+                    <img src="assets/images/merdeka promo_pc.jpg" class="img-fluid" alt="add">
+                    <img src="assets/images/merdeka_mobile.jpg" class="img-fluid" alt="add">
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Add end -->
+
+    <!-- payment start -->
+    <section class="payment-section">
+        <div class="container">
+            <h2>What does the payment include:</h2>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="item">
+                        <h4>Online Smile Assessment</h4>
+                        <p>Do your smile assessment to check if you are suitable to receive the treatment.</p>
+                        <span>Free</span>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="item">
+                        <h4>3D Intraoral Scan</h4>
+                        <p>Book an appointment with us and get your personalized treatment plan designed by orthodontist</p>
+                        <span>RM 300</span>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="item">
+                        <h4>Receive your clear aligners within 3 weeks</h4>
+                        <p>The box include everything that you need for the treatment!</p>
+                        <span>RM 5550</span>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="item">
+                        <h4>Remote Monitoring</h4>
+                        <p>We will always check in with you to track your progress!</p>
+                        <span>Included</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- payment end -->
+
+
 
     <!-- Footer start -->
     <footer class="footer">
