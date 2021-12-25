@@ -102,6 +102,41 @@ $(document).ready(function() {
         ]
     });
 
+    $('.testimonial-slide .sliders').slick({
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        dots: false,
+        // prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
+        // nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>',
+        arrows: false,
+        responsive: [
+          {
+            breakpoint: 991.98,
+            settings: {
+              slidesToShow: 2,
+            }
+          },
+          {
+            breakpoint: 767.98,
+            settings: {
+              slidesToShow: 1,
+            }
+          }
+        ]
+    });
+
+    $('.testimonial-slider-2').slick({
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      dots: false,
+      // prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
+      // nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>',
+      // fade: true,
+      arrows: false,
+  });
+
     $('.reviews .reviews-slide').slick({
       infinite: true,
       slidesToShow: 1,
@@ -144,6 +179,7 @@ $(document).ready(function() {
       });
     })
 
+    $('.reviews-images-2 .item .img').beforeAfter();
 
 
 });

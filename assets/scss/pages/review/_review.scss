@@ -1,53 +1,117 @@
 .reviews {
     padding: 90px 0;
     
-    .reviews-images {
+    // .reviews-images {
         
-        margin-bottom: 90px;
+    //     margin-bottom: 90px;
         
-        // [class^="col"] {
-        //     margin-bottom: 50px;
-        // }
+    //     // [class^="col"] {
+    //     //     margin-bottom: 50px;
+    //     // }
         
-        .reviews-image-content {
-            .row {
-                background-color: $primary-color;
-                max-width: 850px;
-                margin: 0 auto 30px;
-                padding: 15px 0;
+    //     .reviews-image-content {
+    //         .row {
+    //             background-color: $primary-color;
+    //             max-width: 850px;
+    //             margin: 0 auto 30px;
+    //             padding: 15px 0;
+    //         }
+
+    //         // padding: 50px 0;
+
+    //         img {
+    //             vertical-align: middle;
+    //             width: 100%;
+    //         }
+
+    //         .text {
+    //             // background-color: $primary-color;
+    //             height: 100%;
+    //             display: flex;
+    //             align-items: center;
+    //             justify-content: center;
+    //             width: 100%;
+    //             padding: 30px;
+
+    //             p {
+    //                 font-size: 22px;
+    //                 font-weight: 500;
+    //                 color: $white;
+    //                 line-height: 36px;
+    //                 text-align: center;
+
+    //                 &::before {
+    //                     content: '\201C';
+    //                     padding-right: 5px;
+    //                 }
+
+    //                 &::after {
+    //                     content: '\201D';
+    //                     padding-left: 5px;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+
+    .reviews-images-2 {
+        padding-bottom: 90px;
+        
+        h2 {
+            text-align: center;
+            padding-bottom: 30px;
+            color: $primary-color;
+        }
+        .item {
+            position: relative;
+
+            .img {
+                height: 250px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    max-width: inherit !important;
+                }
+
             }
 
-            // padding: 50px 0;
-
-            img {
-                vertical-align: middle;
+            .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
                 width: 100%;
+                height: 250px;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                z-index: 1;
+                text-transform: capitalize;
+                color: $white;
+                background-color: rgba(0, 0, 0, 0.35);
+                opacity: 0;
+                transition: all .3s;
+
+                &:hover {
+                    opacity: 1;
+                }
+
+                span {
+                    padding: 5px 10px;
+                    background-color: rgba(255, 255, 255, 0.3);
+                }
             }
 
             .text {
-                // background-color: $primary-color;
-                height: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 100%;
-                padding: 30px;
+                margin-bottom: 30px;
+                padding-top: 15px;
 
                 p {
-                    font-size: 22px;
-                    font-weight: 500;
-                    color: $white;
-                    line-height: 36px;
-                    text-align: center;
+                    // text-transform: capitalize;
 
-                    &::before {
-                        content: '\201C';
-                        padding-right: 5px;
-                    }
-
-                    &::after {
-                        content: '\201D';
-                        padding-left: 5px;
+                    &::first-letter {
+                        text-transform: capitalize;
                     }
                 }
             }

@@ -701,80 +701,82 @@ ul {
   padding-left: 10px;
 }
 
-.steeps {
-  padding-top: 90px;
+.steeps-two {
+  padding: 90px 0 0;
 }
 
-.steeps .steeps-content {
-  border-radius: 20px;
-  -webkit-box-shadow: 0px 15px 65px 0px rgba(1, 121, 177, 0.14);
-          box-shadow: 0px 15px 65px 0px rgba(1, 121, 177, 0.14);
-  padding: 45px 30px;
-  border-bottom: 10px solid #2ab0ed;
+.steeps-two .row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.steeps .steeps-content h2 {
-  font-size: 34px;
-  line-height: 44px;
-  text-align: center;
-  color: #54595f;
-  margin-bottom: 60px;
+.steeps-two .row [class^="col"] {
+  margin-bottom: 50px;
 }
 
-.steeps .steeps-content .slider .item {
-  padding: 0 15px;
-  text-align: center;
-}
-
-.steeps .steeps-content .slider .item img {
-  display: inline-block;
-}
-
-.steeps .steeps-content .slider .item h4 {
-  font-size: 28px;
-  line-height: 38px;
-  padding: 15px 0 5px;
-  color: #54595f;
-}
-
-.steeps .steeps-content .slider .item p {
-  font-size: 22px;
-  line-height: 32px;
-  font-family: "Proxima-Nova-bold", sans-serif;
-  color: #54595f;
-}
-
-.steeps .steeps-content .slider .slick-arrow {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  font-size: 42px;
-  background-color: transparent;
-  border: 0;
-  color: #54595f;
-  margin-top: -10px;
-  z-index: 999;
+.steeps-two .item {
+  border-right: 4px solid #023569;
+  padding: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media (max-width: 767.98px) {
-  .steeps .steeps-content .slider .slick-arrow {
-    font-size: 32px;
+  .steeps-two .item {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 
-@media (max-width: 575px) {
-  .steeps .steeps-content .slider .slick-arrow {
-    display: none !important;
+.steeps-two .item img {
+  width: 100px;
+  margin-right: 30px;
+}
+
+.steeps-two .item .text span {
+  background-color: #023569;
+  color: #ffffff;
+  display: inline-block;
+  padding: 2px 20px;
+  border-radius: 15px;
+}
+
+.steeps-two .item .text h4 {
+  color: #023569;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.steeps-two [class^="col"]:nth-child(3n) .item {
+  border-color: transparent;
+}
+
+.steeps-two [class^="col"]:last-child .item {
+  border-color: transparent;
+}
+
+@media (max-width: 991.98px) {
+  .steeps-two [class^="col"]:nth-child(3n) .item {
+    border-color: #023569;
+  }
+  .steeps-two [class^="col"]:nth-child(2n) .item {
+    border-color: transparent;
   }
 }
 
-.steeps .steeps-content .slider .slick-arrow.slick-prev {
-  left: 0;
-}
-
-.steeps .steeps-content .slider .slick-arrow.slick-next {
-  right: 0;
+@media (max-width: 767.98px) {
+  .steeps-two [class^="col"] .item {
+    border-color: transparent !important;
+  }
 }
 
 .testimonial {
@@ -843,6 +845,10 @@ ul {
     line-height: 28px;
     font-family: "Proxima-Nova-reg", sans-serif;
   }
+}
+
+.testimonial-slide {
+  padding: 90px 0 0;
 }
 
 .brands {
@@ -1188,6 +1194,17 @@ ul {
   padding-right: 50px;
 }
 
+.main-future .content ul li span {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.main-future .content ul li small {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 28px;
+}
+
 @media (max-width: 991.98px) {
   .main-future .content ul li {
     width: 100%;
@@ -1198,6 +1215,7 @@ ul {
   position: absolute;
   top: 0;
   left: 0;
+  width: 60px;
 }
 
 .we-are .content {
@@ -1271,6 +1289,7 @@ ul {
 
 .about {
   margin-bottom: 90px;
+  padding-top: 90px;
 }
 
 @media (max-width: 991.98px) {
@@ -2256,53 +2275,72 @@ ul {
   padding: 90px 0;
 }
 
-.reviews .reviews-images {
-  margin-bottom: 90px;
+.reviews .reviews-images-2 {
+  padding-bottom: 90px;
 }
 
-.reviews .reviews-images .reviews-image-content .row {
-  background-color: #245BCD;
-  max-width: 850px;
-  margin: 0 auto 30px;
-  padding: 15px 0;
+.reviews .reviews-images-2 h2 {
+  text-align: center;
+  padding-bottom: 30px;
+  color: #245BCD;
 }
 
-.reviews .reviews-images .reviews-image-content img {
-  vertical-align: middle;
+.reviews .reviews-images-2 .item {
+  position: relative;
+}
+
+.reviews .reviews-images-2 .item .img {
+  height: 250px;
+}
+
+.reviews .reviews-images-2 .item .img img {
   width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: inherit !important;
 }
 
-.reviews .reviews-images .reviews-image-content .text {
-  height: 100%;
+.reviews .reviews-images-2 .item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 250px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 100%;
-  padding: 30px;
-}
-
-.reviews .reviews-images .reviews-image-content .text p {
-  font-size: 22px;
-  font-weight: 500;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  z-index: 1;
+  text-transform: capitalize;
   color: #ffffff;
-  line-height: 36px;
-  text-align: center;
+  background-color: rgba(0, 0, 0, 0.35);
+  opacity: 0;
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
 
-.reviews .reviews-images .reviews-image-content .text p::before {
-  content: '\201C';
-  padding-right: 5px;
+.reviews .reviews-images-2 .item .overlay:hover {
+  opacity: 1;
 }
 
-.reviews .reviews-images .reviews-image-content .text p::after {
-  content: '\201D';
-  padding-left: 5px;
+.reviews .reviews-images-2 .item .overlay span {
+  padding: 5px 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.reviews .reviews-images-2 .item .text {
+  margin-bottom: 30px;
+  padding-top: 15px;
+}
+
+.reviews .reviews-images-2 .item .text p::first-letter {
+  text-transform: capitalize;
 }
 
 .reviews .reviews-text {
