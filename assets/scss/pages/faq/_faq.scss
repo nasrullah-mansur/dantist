@@ -41,7 +41,7 @@
 
             &:hover,
             &.active {
-                background-color: #2ab0ed;
+                background-color: $primary-color;
                 color: $white !important;
                 img {
                     filter: brightness(0) invert(1);

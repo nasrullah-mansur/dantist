@@ -65,14 +65,14 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    border: 2px solid #2ab0ed;
-                    color: #2ab0ed;
+                    border: 2px solid $primary-color;
+                    color: $primary-color;
                     font-weight: 600;
                     border-radius: 25px;
                     transition: $transition;
 
                     &:hover {
-                        background-color: #2ab0ed;
+                        background-color: $primary-color;
                         color: $white;
                     }
                 }
@@ -185,7 +185,7 @@
 }
 
 .payment-section {
-    padding-bottom: 90px;
+    padding: 90px 0 0;
 
     h2 {
         padding-bottom: 40px;

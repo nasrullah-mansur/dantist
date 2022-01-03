@@ -7,6 +7,10 @@
     padding-bottom: 215px;
     padding-top: 100px;
 
+    .smile {
+        font-family: 'Dancing Script', cursive;
+    }
+
     .container {
         position: relative;
         padding-top: 150px;
@@ -67,7 +71,7 @@
             border: 0;
             box-shadow: 0px 10px 30px 0px rgba(41.9, 174.99, 236.99, 0.192);
             padding: 18px 55px;
-            background-color: #2ab0ed;
+            background-color: $primary-color;
             color: $white;
         }
     }
